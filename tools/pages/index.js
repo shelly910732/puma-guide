@@ -13,6 +13,7 @@ module.exports = {
           <div class="rise" style="width:150px">${h.heroArt}</div>
           <span class="eyebrow pop">2026 台北市長選舉｜親子版</span>
           <h1 class="pop">台北的陽光</h1>
+          <p class="pop tagline">一個致力於<b>民胞物與</b>、<b>大同世界</b>的台北市長候選人</p>
           <p class="pop"><b>60 秒認識 3 號 沈伯洋</b>（大家叫他 Puma）</p>
           <div class="facets5 pop"><span>📚 學識</span><span>🧭 經歷</span><span>🦁 膽識</span><span>❤️ 愛</span><span>😄 情商</span></div>
         </article>
@@ -62,6 +63,21 @@ module.exports = {
     </div>
     <a class="story-skip" href="#heart">跳過，直接看網站 ↓</a>
     <p class="story-note">五個關鍵字的靈感來自網友創作的應援歌<a href="${h.yt('obUSoRRy2As')}">《台北值得沈伯洋》</a>（非官方）。</p>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">網站名稱的由來</p>
+      <h2>☀️ 為什麼叫「台北的陽光」？</h2>
+      <p class="lead">因為他想帶來的，是一場溫暖、正向、照亮每個人的選舉。</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><span class="emoji">🛡️</span><h3>堅持正面選舉</h3><p>參選到投票一共 199 天，他說自己「<b>始終堅持正面選舉、討論政策</b>」，也要讓市民有參與感。辯論會上他強調不做負面攻擊；有高中生拿著劃掉高虹安名字的獎狀找他簽名、引發網路爭論時，他也說「不要攻擊學生」。</p>${h.src([['自由時報：城市行動展致詞（2026-11-22）', 'https://news.ltn.com.tw/news/politics/breakingnews/5649814'], ['辯論會結辯（影片）', h.yt('CoYcmvFHI90')], ['中央社：不要攻擊學生', 'https://cna.com.tw/news/aloc/202608240046.aspx']])}</div>
+      <div class="card"><span class="emoji">⭐</span><h3>每個人都是星星</h3><p>11 月 20 日在台中，他引用泰戈爾的詩：「<b>不要因為失去太陽而哭泣，因為會錯過夜晚的星星。</b>」他說，每一個人都是星星，光芒也許微弱，卻能照亮身旁的人；大家加起來，就是照亮城市未來的光。</p>${h.src([['自由時報報導', 'https://news.ltn.com.tw/news/politics/breakingnews/5649814'], ['城市行動展致詞（影片）', h.yt('U_7REVl4zpY')]])}</div>
+      <div class="card"><span class="emoji">🎤</span><h3>把舞台交給市民</h3><p>選前最後一個週末，他沒有辦大型造勢，而是辦「<b>城市行動展</b>」，主辦單位估計超過 10 萬人參加。他說這是「市民主義」：不是他去掃街，而是讓市民來掃街，讓大家看見台北的潛力和想要的未來。</p>${h.src([['自由時報報導', 'https://news.ltn.com.tw/news/politics/breakingnews/5649814'], ['他的臉書粉專', 'https://www.facebook.com/puma.taipei']])}</div>
+    </div>
   </div>
 </section>
 

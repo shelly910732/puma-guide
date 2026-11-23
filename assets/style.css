@@ -385,3 +385,4 @@ details.flip > summary .bubble .ic { width: 2.2rem; height: 2.2rem; }
 .story-ctrl button span { display: inline-flex; align-items: center; gap: 6px; }
 .facets5 .ic, .chip .ic { width: 1.1em; height: 1.1em; }
 h1 .ic, h2 .ic { width: 1.1em; height: 1.1em; vertical-align: -.18em; }
+.slide .tagline { font-size: 1.08rem; font-weight: 700; color: var(--accent-strong); border-left: 4px solid var(--sun); padding: 2px 0 2px 12px; margin: -2px 0 2px; }
