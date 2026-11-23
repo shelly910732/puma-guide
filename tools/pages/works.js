@@ -1,0 +1,62 @@
+module.exports = {
+  file: 'works.html',
+  title: '網站與文字作品',
+  desc: '沈伯洋的競選官網、洋流誌、順報、市長你給我聽好了、HEART 政策島、YouTube 頻道，以及鏡文學專訪〈走出暗黝森林〉。',
+  section: 'data',
+  crumb: [['完整資料', 'data.html'], ['網站與文字作品']],
+  body: (h) => `
+<section class="page-hero">
+  <div class="wrap">
+    <h1>📰 網站與文字作品</h1>
+    <p class="lead">他的競選團隊做了很多有創意的刊物和網站。要知道：這些都是<b>競選文宣</b>，內容自然是對他有利的說法。</p>
+  </div>
+</section>
+<section class="section" style="padding-top:8px">
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card"><span class="emoji">🌐</span><h3>它在哪裡看得到所有政見？<br><span class="name" style="font-size:1rem">競選官網</span></h3>
+        <p>學經歷、HEART 政策、選舉公報、闢謠專區、每日受訪影片、文宣下載都在這裡。</p>
+        ${h.src([['puma.taipei', 'https://puma.taipei/']])}</div>
+      <div class="card"><span class="emoji">📗</span><h3>詩人和漫畫家寫的市政小書？<br><span class="name" style="font-size:1rem">洋流誌</span></h3>
+        <p><b>5 本文學小誌</b>，由詩人、作家、漫畫家、插畫家創作，主題是市政治理與城市外交、交通運輸、育兒、城市再造、勞動與經濟。是創作，不是政策說明書。</p>
+        ${h.more('看更多', '<p>新聞報導說紙本另有第 6 本全白，留給市民自己寫；曾在 20 家店限量發放，不到 2 小時就送完。</p>')}
+        ${h.src([['官網頁面', 'https://puma.taipei/soonmook'], ['自由時報報導', 'https://news.ltn.com.tw/news/politics/paper/1776193']])}</div>
+      <div class="card"><span class="emoji">🗞️</span><h3>在捷運站發的報紙？<br><span class="name" style="font-size:1rem">順報</span></h3>
+        <p>紙本競選刊物，一共 <b>4 期</b>：</p>
+        <ol>
+          <li>10/06 創刊號：跑步、散步、爬山</li>
+          <li>10/22 帶孩子玩台北：親子同行卡、腸病毒疫苗、家長版 1999</li>
+          <li>11/10 人生中場的支持筆記：轉職創業支持、心理諮商、皮蛇疫苗</li>
+          <li>11/20 初級大人：AI 教育錢包、城市青年基金、文化幣，附寵物食譜和小遊戲</li>
+        </ol>
+        ${h.src([['官網頁面', 'https://puma.taipei/soon-daily'], ['中央社報導', 'https://www.cna.com.tw/news/aloc/202611200112.aspx'], ['台視新聞影片', h.yt('fHjI-kfOycg')]])}</div>
+      <div class="card"><span class="emoji">🐾</span><h3>市民的意見變成小動物排隊？<br><span class="name" style="font-size:1rem">市長，你給我聽好了</span></h3>
+        <p>用 LINE 收集市民意見的平台，市民留言會變成可愛動物排隊發言。</p>
+        ${h.src([['官網頁面', 'https://puma.taipei/taipeispeaksup'], ['中央社報導', 'https://cna.com.tw/news/aipl/202609090125.aspx']])}</div>
+      <div class="card"><span class="emoji">🏝️</span><h3>政見做成遊戲地圖？<br><span class="name" style="font-size:1rem">HEART 政策島</span></h3>
+        <p>把政見做成像遊戲一樣的互動頁面。</p>
+        ${h.src([['官網頁面', 'https://puma.taipei/heart-island']])}</div>
+      <div class="card"><span class="emoji">▶️</span><h3>他自己的頻道<br><span class="name" style="font-size:1rem">YouTube「沈伯洋Puma」</span></h3>
+        <p>例如〈那些年，我在南陽街〉（2026-06-08），聊他當補習班老師的日子。</p>
+        ${h.src([['看影片', h.yt('0jOSng47e4I')]])}</div>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="wrap narrow">
+    <div class="section-head"><p class="kicker">鏡文學專訪</p><h2>📖〈走出暗黝森林──沈伯洋談閱讀、陪伴與文化〉</h2></div>
+    <div class="card">
+      <ul>
+        <li>小時候大量看課外書，少年時最想當<b>小說家</b>。</li>
+        <li>讀法律系後幾乎沒時間看課外書，只有<b>漫畫</b>一直沒放下。</li>
+        <li>最喜歡的角色是《新世紀福音戰士》的<b>碇真嗣</b>。</li>
+        <li>用 AI 不能只叫它「幫我摘要」，自己要大量閱讀，才問得出好問題。</li>
+        <li>最後一篇談他的文化政策。</li>
+      </ul>
+      <p><span class="chip">文字版</span> <a href="https://www.mirrorfiction.com/news/1433">鏡文學原文</a>、<a href="https://www.mirrormedia.mg/story/20260907cul006">鏡週刊轉載</a>（2026-09-07，另分成 5 篇小專訪）</p>
+      <p><span class="chip">影片版</span> ②〈<a href="${h.yt('dmLF1wjt1CU')}">從叛逆小孩到能獨立思考的留美博士</a>〉2026-09-08、③〈<a href="${h.yt('1OvkV6SPS8w')}">從電玩到陪伴，當文化成為一種生活方式</a>〉2026-09-09；①（談《蜘蛛人》、《新世紀福音戰士》）目前沒有找到正確連結。</p>
+      <div class="note"><strong>要知道的爭議：</strong>有人批評鏡文學拿政府補助卻連刊 5 篇沈伯洋專訪。沈伯洋回應，這是談閱讀和文化，跟補助是兩回事；鏡文學表示也會邀蔣萬安受訪。（<a href="https://www.worldjournal.com/wj/story/121218/9743292">世界日報報導</a>）</div>
+    </div>
+  </div>
+</section>`,
+};
