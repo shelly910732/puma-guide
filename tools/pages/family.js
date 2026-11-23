@@ -58,7 +58,7 @@ module.exports = {
       <article class="vcard">
         <div class="threads-embed">
           <blockquote class="text-post-media" data-text-post-permalink="https://www.threads.com/@catoceanpeer/post/DdeAyaxCUQ7" data-text-post-version="0" style="margin:0;max-width:100%;min-width:0;width:100%;border:0">
-            <a href="https://www.threads.com/@catoceanpeer/post/DdeAyaxCUQ7" class="threads-fallback">▶ 在 Threads 上看影片</a>
+            <a href="https://www.threads.com/@catoceanpeer/post/DdeAyaxCUQ7" class="threads-fallback">${h.ic('tri')} 在 Threads 上看影片</a>
           </blockquote>
         </div>
         <div class="body">

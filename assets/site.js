@@ -15,7 +15,7 @@
     } else if (now <= end) {
       big.textContent = '今天投票中！下午 4 點截止';
     } else {
-      title.textContent = '🗳️ 投票紀錄';
+      title.textContent = '投票紀錄';
       big.textContent = '2026 年 11 月 28 日（六）';
       list.innerHTML = '<li>台北市長選舉投票時間：上午 8 點到下午 4 點</li>' +
         '<li>沈伯洋是 <b>3 號</b>，一共 6 位候選人</li>' +
@@ -55,7 +55,7 @@
       } else { t0 = now; }
       raf = requestAnimationFrame(tick);
     }
-    function label() { btnPlay.textContent = playing ? '⏸ 暫停' : '▶ 播放'; btnPlay.setAttribute('aria-pressed', playing ? 'false' : 'true'); }
+    function label() { btnPlay.querySelector('[data-when="on"]').hidden = !playing; btnPlay.querySelector('[data-when="off"]').hidden = playing; btnPlay.setAttribute('aria-pressed', playing ? 'false' : 'true'); }
     story.querySelector('[data-prev]').addEventListener('click', function () { go(idx - 1); });
     story.querySelector('[data-next]').addEventListener('click', function () { go(idx + 1); });
     btnPlay.addEventListener('click', function () {

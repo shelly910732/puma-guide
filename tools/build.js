@@ -56,7 +56,9 @@ const HEART = [
 ];
 
 // ---------- helpers given to pages ----------
+const icons = require('./icons');
 const h = {
+  ic: (name) => icons.svg(name),
   esc, yt, thumb, CAT, HEART, VIDEOS, V, sun, heroArt, doorIcon, fmtDate, UPDATED,
   src: (links) => `<p class="src">${links.map(([t, u]) => `<a href="${u}">${t}</a>`).join('、')}</p>`,
   more: (summary, inner) => `<details class="more"><summary>${summary}</summary><div>${inner}</div></details>`,
@@ -67,7 +69,7 @@ const h = {
     const title = o.title || v.title;
     const len = v.min ? `${v.min} 分鐘` : '';
     return `<article class="vcard">
-  <a class="thumb" href="${yt(id)}"><img src="${thumb(id)}" alt="" loading="lazy" width="320" height="180">${len ? `<span class="play">▶ ${len}</span>` : ''}</a>
+  <a class="thumb" href="${yt(id)}"><img src="${thumb(id)}" alt="" loading="lazy" width="320" height="180">${len ? `<span class="play">${icons.svg('tri')} ${len}</span>` : ''}</a>
   <div class="body">
     <h3><a href="${yt(id)}">${title}</a></h3>
     <span class="meta">${esc(v.channel)}｜${fmtDate(v)}</span>
@@ -171,7 +173,9 @@ const src = pages.find((p) => p.file === 'sources.html');
 built[src.file] = { p: src, body: src.body(h) };
 
 for (const { p, body } of Object.values(built)) {
-  fs.writeFileSync(path.join(ROOT, p.file), layout(p, body));
+  const html = layout(p, body);
+  const cut = html.indexOf('<body>');
+  fs.writeFileSync(path.join(ROOT, p.file), html.slice(0, cut) + icons.replaceEmoji(html.slice(cut)));
 }
 // keep old addresses working
 const redirect = (to, label) => `<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=${to}"><link rel="canonical" href="${to}"><title>已搬家</title></head><body><p>這一頁已經搬到 <a href="${to}">${label}</a>。</p></body></html>\n`;

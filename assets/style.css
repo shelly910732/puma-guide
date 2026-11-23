@@ -370,3 +370,18 @@ main ol li::marker { color: var(--accent); font-weight: 900; }
 :root { --mini-link: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.8' stroke-linecap='round'%3E%3Cpath d='M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2'/%3E%3Cpath d='M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2'/%3E%3Ccircle cx='20' cy='20' r='2.6' fill='%23000' stroke='none'/%3E%3C/svg%3E"); }
 .ico-link { display: inline-block; width: 1em; height: 1em; vertical-align: -.12em; background: var(--sun); -webkit-mask: var(--mini-link) center / contain no-repeat; mask: var(--mini-link) center / contain no-repeat; }
 .card .emoji.ico-link { width: 2rem; height: 2rem; }
+
+/* ---------- 插畫風圖示（取代 emoji） ---------- */
+.ic { display: inline-block; width: 1.15em; height: 1.15em; vertical-align: -.22em; flex: none; }
+.card .emoji .ic, .card > .emoji.ic { width: 2.4rem; height: 2.4rem; }
+.big-emoji .ic { width: .72em; height: .72em; vertical-align: 0; }
+.timeline .dot .ic { width: 1.6rem; height: 1.6rem; vertical-align: 0; }
+.tabbar .ico .ic { width: 1.6rem; height: 1.6rem; vertical-align: 0; }
+details.flip > summary .bubble .ic { width: 2.2rem; height: 2.2rem; }
+.vcard .thumb .play .ic { width: .9em; height: .9em; vertical-align: -.1em; }
+.story-ctrl button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+.story-ctrl button .ic { width: 1.15rem; height: 1.15rem; vertical-align: 0; }
+.story-ctrl button [hidden] { display: none; }
+.story-ctrl button span { display: inline-flex; align-items: center; gap: 6px; }
+.facets5 .ic, .chip .ic { width: 1.1em; height: 1.1em; }
+h1 .ic, h2 .ic { width: 1.1em; height: 1.1em; vertical-align: -.18em; }

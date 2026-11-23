@@ -55,9 +55,9 @@ module.exports = {
         </article>
       </div>
       <div class="story-ctrl">
-        <button type="button" data-prev aria-label="上一張">◀</button>
-        <button type="button" data-play aria-pressed="false">⏸ 暫停</button>
-        <button type="button" class="next" data-next aria-label="下一張">▶</button>
+        <button type="button" data-prev aria-label="上一張">${h.ic('prev')}</button>
+        <button type="button" data-play aria-pressed="false"><span data-when="on">${h.ic('pause')} 暫停</span><span data-when="off" hidden>${h.ic('tri')} 播放</span></button>
+        <button type="button" class="next" data-next aria-label="下一張">${h.ic('next')}</button>
       </div>
     </div>
     <a class="story-skip" href="#heart">跳過，直接看網站 ↓</a>
@@ -110,7 +110,7 @@ module.exports = {
   <div class="wrap narrow">
     <div class="section-head"><p class="kicker">④ 投票日</p></div>
     <div class="vote" data-vote>
-      <h2 data-vote-title>🗳️ 2026 年 11 月 28 日（六）投票</h2>
+      <h2>🗳️ <span data-vote-title>2026 年 11 月 28 日（六）投票</span></h2>
       <p class="big" data-vote-big>上午 8 點到下午 4 點</p>
       <ul data-vote-list>
         <li>投票時間：<b>上午 8 點到下午 4 點</b></li>
