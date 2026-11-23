@@ -347,3 +347,6 @@ tr:last-child td { border-bottom: 0; }
 .chapter li { padding-left: 1.6em; position: relative; }
 .chapter li::before { content: "●"; color: var(--sc); position: absolute; left: .3em; font-size: .8em; top: .25em; }
 .s-intro .rise svg { width: 100%; height: auto; display: block; }
+.threads-embed { background: var(--bg-2); min-height: 120px; display: grid; place-items: center; padding: 8px; }
+.threads-embed iframe { max-width: 100% !important; }
+.threads-fallback { display: inline-flex; padding: 14px 20px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-weight: 800; text-decoration: none; }

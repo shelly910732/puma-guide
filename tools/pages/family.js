@@ -55,12 +55,26 @@ module.exports = {
 
     <h3 style="margin-top:28px">⚾ 棒球</h3>
     <div class="vgrid">
+      <article class="vcard">
+        <div class="threads-embed">
+          <blockquote class="text-post-media" data-text-post-permalink="https://www.threads.com/@catoceanpeer/post/DdeAyaxCUQ7" data-text-post-version="0" style="margin:0;max-width:100%;min-width:0;width:100%;border:0">
+            <a href="https://www.threads.com/@catoceanpeer/post/DdeAyaxCUQ7" class="threads-fallback">▶ 在 Threads 上看影片</a>
+          </blockquote>
+        </div>
+        <div class="body">
+          <h3><a href="https://www.threads.com/@catoceanpeer/post/DdeAyaxCUQ7">12 強奪冠那一刻，想拍英雄卻變成自拍</a></h3>
+          <span class="meta">Threads 網友轉貼｜原始畫面 2024-11-24</span>
+          <p>2024 年 11 月 24 日，中華隊在世界 12 強冠軍賽以 4 比 0 打敗日本，拿下第一座世界冠軍。他在東京巨蛋想拍場上的球員，鏡頭卻轉錯方向，拍到自己激動大吼的樣子。</p>
+          <p class="why">✨ 很多人說這是最「真」的他。</p>
+          <p class="caveat">⚠️ 這是網友 2026 年 9 月在 Threads 的轉貼；影片浮水印是 @pumashen，原本是他自己發在 Instagram 的影片。</p>
+        </div>
+      </article>
       ${h.vcard('2_j3dZxzJ4k', { title: '業餘棒球聯賽開球', why: '他自嘲投球只有「ㄦ級分」。' })}
       ${h.vcard('nYX8U9XbOGw', { title: '網友 Vlog：去看棒球，隔壁竟然是沈伯洋', why: '一位網友去大巨蛋看球、再到東京巨蛋看經典賽的紀錄。', caveat: '這是網友拍的 Vlog，我們沒有看完全片，無法確認他在片中出現多久。' })}
       ${h.vcard('nBKI5DtH4Lc', { title: '2024 年 12 強，在東京巨蛋幫中華隊加油', why: '政論節目和在東京巨蛋看球的他視訊連線。', caveat: '這是新聞節目，不是他自己拍的看球影片。' })}
       ${h.vcard('5j7wA5HZ6Qs', { title: '被問「棒球支持哪一隊」一秒語塞', why: '他的回答是：「每一隊我都非常喜歡」。' })}
     </div>
-    <p class="caveat" style="margin-top:8px">他在球場大聲吶喊的影片，可能是貼在他的 Facebook 或 Threads；這兩個平台要登入才能搜尋，所以還沒放上來。</p>
+    <script async src="https://www.threads.net/embed.js"></script>
 
     <h3 style="margin-top:28px">🎤 動漫金句和應援舞</h3>
     <div class="vgrid">
