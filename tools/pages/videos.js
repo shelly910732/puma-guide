@@ -27,7 +27,7 @@ module.exports = {
   <div class="wrap">
     <h1>🎬 影音資料庫</h1>
     <p class="lead">一共 <b>${vs.length} 筆</b>，每一筆都到 YouTube 確認過影片存在，標題和頻道照 YouTube 上的寫法。可以搜尋，也可以按類型、年份篩選。</p>
-    <div class="grid grid-3" style="margin-bottom:8px">
+    <div class="stats" style="margin-bottom:8px">
       <div class="card stat"><span class="num">${vs.length}</span><span class="label">筆影片</span></div>
       <div class="card stat"><span class="num">${count('life') + count('mixed')}</span><span class="label">筆跟生活有關</span></div>
       <div class="card stat"><span class="num">${count('fun')}</span><span class="label">筆有趣片段</span></div>

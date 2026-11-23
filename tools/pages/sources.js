@@ -17,7 +17,7 @@ module.exports = {
   <div class="wrap">
     <h1>🔗 資料來源總表</h1>
     <p class="lead">本站每一頁引用的新聞、官網連結都列在這裡（每次更新網站時自動彙整）。影片另外整理在<a href="videos.html">影音資料庫</a>（${h.VIDEOS.length} 筆）。</p>
-    <div class="grid grid-3">
+    <div class="stats">
       <div class="card stat"><span class="num">${uniq(docs).length}</span><span class="label">筆新聞與官網連結</span></div>
       <div class="card stat"><span class="num">${h.VIDEOS.length}</span><span class="label">筆影片（資料庫）</span></div>
       <div class="card stat"><span class="num">${new Set(uniq(docs).map((l) => host(l.url))).size}</span><span class="label">個不同來源網站</span></div>

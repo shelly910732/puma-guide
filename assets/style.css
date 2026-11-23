@@ -135,7 +135,9 @@ strong, b { font-weight: 800; }
 @media (min-width: 760px) { .hero .wrap { grid-template-columns: 1.3fr 1fr; } }
 .hero .eyebrow { display: inline-block; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 2px 12px; font-size: .9rem; font-weight: 700; color: var(--accent); }
 .hero .sub { font-size: 1.15rem; font-weight: 700; color: var(--muted); margin: 0 0 12px; }
-.hero .art { max-width: 320px; margin: 0 auto; }
+.hero .art { width: 100%; max-width: 320px; margin: 0 auto; }
+.hero .art svg { width: 100%; height: auto; display: block; }
+@media (max-width: 759px) { .hero .art { max-width: 240px; } }
 .page-hero { padding: 24px 0 8px; }
 .page-hero .lead { font-size: 1.1rem; color: var(--muted); max-width: 46em; }
 
@@ -166,6 +168,11 @@ a.card:hover { transform: translateY(-3px); color: var(--text); }
 .stat .num { font-size: clamp(2rem, 8vw, 2.8rem); font-weight: 900; color: var(--accent); line-height: 1.1; display: block; }
 .stat .unit { font-size: 1rem; font-weight: 800; }
 .stat .label { color: var(--muted); font-size: .95rem; }
+
+.stats { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); }
+.stats .card { padding: 14px 8px; }
+.stats .num { font-size: clamp(1.5rem, 7vw, 2.4rem); }
+.stats .label { font-size: .85rem; display: block; line-height: 1.4; }
 
 /* callouts */
 .note { background: var(--sun-soft); border-radius: var(--radius-sm); padding: 14px 16px; font-size: .95rem; margin: 16px 0; }
