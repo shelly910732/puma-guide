@@ -9,6 +9,9 @@ const SITE = '台北的陽光';
 const SITE_SUB = '認識市長候選人沈伯洋 | 親子快速指南';
 const UPDATED = '2026-11-23';
 const VIDEOS = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'videos.json'), 'utf8'));
+const crypto = require('crypto');
+const ver = (f) => crypto.createHash('md5').update(fs.readFileSync(path.join(ROOT, f))).digest('hex').slice(0, 8);
+const CSS_V = ver('assets/style.css'), JS_V = ver('assets/site.js');
 const V = Object.fromEntries(VIDEOS.map((v) => [v.id, v]));
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -100,7 +103,7 @@ function layout(p, body) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=${CSS_V}">
 </head>
 <body>
 <a class="sr-only" href="#main">跳到主要內容</a>
@@ -124,7 +127,7 @@ ${body}
   </div>
 </footer>
 <nav class="tabbar" aria-label="快速切換">${NAV.map((n) => `<a href="${n.href}"${cur(n)}><span class="ico" aria-hidden="true">${n.ico}</span>${n.label}</a>`).join('')}</nav>
-<script src="assets/site.js" defer></script>
+<script src="assets/site.js?v=${JS_V}" defer></script>
 </body>
 </html>
 `;
