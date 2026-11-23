@@ -350,3 +350,20 @@ tr:last-child td { border-bottom: 0; }
 .threads-embed { background: var(--bg-2); min-height: 120px; display: grid; place-items: center; padding: 8px; }
 .threads-embed iframe { max-width: 100% !important; }
 .threads-fallback { display: inline-flex; padding: 14px 20px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-weight: 800; text-decoration: none; }
+
+/* ---------- 插畫風項目符號：小太陽（一般清單）、小愛心（故事章節） ---------- */
+:root {
+  --mini-sun: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='5.5'/%3E%3Cg stroke='%23000' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 1.8v2.6M12 19.6v2.6M1.8 12h2.6M19.6 12h2.6M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M4.8 19.2l1.8-1.8M17.4 6.6l1.8-1.8'/%3E%3C/g%3E%3C/svg%3E");
+  --mini-heart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21s-8.5-5.2-8.5-11.2C3.5 6.6 5.9 4.5 8.4 4.5c1.7 0 3 .9 3.6 2.2.6-1.3 1.9-2.2 3.6-2.2 2.5 0 4.9 2.1 4.9 5.3C20.5 15.8 12 21 12 21z'/%3E%3C/svg%3E");
+}
+main ul:not(.vlist):not(.timeline):not(.chips) { list-style: none; padding-left: 1.7em; }
+main ul:not(.vlist):not(.timeline):not(.chips) > li { position: relative; }
+main ul:not(.vlist):not(.timeline):not(.chips) > li::before {
+  content: ""; position: absolute; left: -1.45em; top: .42em; width: 1em; height: 1em;
+  background: var(--bullet, var(--sun));
+  -webkit-mask: var(--mini-sun) center / contain no-repeat; mask: var(--mini-sun) center / contain no-repeat;
+}
+.chapter ul > li::before { content: "" !important; --bullet: var(--sc); -webkit-mask-image: var(--mini-heart) !important; mask-image: var(--mini-heart) !important; left: -1.45em !important; top: .45em !important; width: .95em; height: .95em; color: inherit; font-size: inherit; }
+.chapter ul { padding-left: 1.7em !important; }
+.chapter li { padding-left: 0 !important; }
+main ol li::marker { color: var(--accent); font-weight: 900; }
