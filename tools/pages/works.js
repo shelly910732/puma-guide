@@ -9,9 +9,33 @@ module.exports = {
   <div class="wrap">
     <h1>📰 網站與文字作品</h1>
     <p class="lead">他的競選團隊做了很多有創意的刊物和網站。要知道：這些都是<b>競選文宣</b>，內容自然是對他有利的說法。</p>
+    <div class="chips"><a class="chip" href="#join">他怎麼讓大家一起參與</a><a class="chip" href="#list">網站與刊物一覽</a><a class="chip" href="#mirror">鏡文學專訪</a></div>
   </div>
 </section>
-<section class="section" style="padding-top:8px">
+
+<section class="section alt" id="join">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">把舞台交給市民</p>
+      <h2>🤝 他怎麼讓大家一起參與政治？</h2>
+      <p class="lead">他用很多活動和作品，讓市民一起討論政治、認識台北，也了解他的想法。</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><span class="emoji">📗</span><h3>寫給市民的空白小書<br><span class="name" style="font-size:1rem">洋流誌</span></h3><p>5 本由作家、漫畫家創作的小誌；新聞報導說紙本另有一本<b>全白的第 6 本</b>，留給市民寫下自己想要的台北。</p>${h.src([['自由時報報導', 'https://news.ltn.com.tw/news/politics/paper/1776193']])}</div>
+      <div class="card"><span class="emoji">💬</span><h3>用 50 個字說出想法<br><span class="name" style="font-size:1rem">市長，你給我聽好了</span></h3><p>市民用 LINE 留言，意見會變成可愛動物「排隊上台」說話。</p>${h.src([['官網頁面', 'https://puma.taipei/taipeispeaksup']])}</div>
+      <div class="card"><span class="emoji">🎤</span><h3>大家一起寫歌<br><span class="name" style="font-size:1rem">《台北順起來》市民共創</span></h3><p>競選歌曲公開後向市民徵件，一共收到 <b>293 首</b>；五位導師各選一首，再和原作者一起重新編曲、錄製。</p>${h.src([['官網：共創歌曲', 'https://puma.taipei/songs'], ['自由時報：廣邀全民共創', 'https://news.ltn.com.tw/news/politics/breakingnews/5576881']])}</div>
+      <div class="card"><span class="emoji">🏝️</span><h3>像玩遊戲一樣看政見<br><span class="name" style="font-size:1rem">HEART 政策島</span></h3><p>把政見做成互動地圖，一格一格點開來看。</p>${h.src([['官網頁面', 'https://puma.taipei/heart-island']])}</div>
+      <div class="card"><span class="emoji">🎬</span><h3>音樂和闖關的嘉年華<br><span class="name" style="font-size:1rem">洋流祭</span></h3><p>11 月 14 日在二二八和平紀念公園，兩座舞台輪流演出，還有政策島闖關集章。</p>${h.src([['官網：洋流祭', 'https://puma.taipei/oshen']])}</div>
+      <div class="card"><span class="emoji">🛵</span><h3>走遍台北每一區<br><span class="name" style="font-size:1rem">台北大洋流</span></h3><p>10 月 11 日到 11 月 15 日，一共 6 場「環台北掃街」，每場跑一到兩個行政區。</p>${h.src([['官網：台北大洋流', 'https://puma.taipei/taipei-current']])}</div>
+      <div class="card"><span class="emoji">🏃</span><h3>市民當主角<br><span class="name" style="font-size:1rem">城市行動展「市民動起來！」</span></h3><p>11 月 22 日串聯 6 個站點，邀請市民打造道具、換裝上街。他在臉書說，這次是「把舞台交給市民」。</p>${h.src([['NOWnews：活動規劃', 'https://www.nownews.com/news/6893123'], ['他的臉書粉專', 'https://www.facebook.com/puma.taipei']])}</div>
+      <div class="card"><span class="emoji">🛡️</span><h3>活動很熱鬧，也要很安全</h3><p>他在活動前常提醒「<b>安全第一</b>」：水路活動安排民間救難隊待命、加強河岸照明；雨天活動禁止撐傘、設醫護站；包船因公文取消時，他說「守法最重要、安全第一」。</p>${h.src([['自由時報：關渡宮最終場', 'https://news.ltn.com.tw/news/politics/breakingnews/5639674'], ['自由時報：守法最重要、安全第一', 'https://news.ltn.com.tw/news/politics/breakingnews/5640688']])}</div>
+      <div class="card"><span class="emoji">🌳</span><h3>介紹台北的好</h3><p>他常在影片和政見裡介紹台北的建築、市場和歷史，例如「<b>文化徑</b>」串起剝皮寮、龍山寺、大稻埕碼頭、霞海城隍廟。他自己高中時也當過<b>鄉土文化研究社</b>社長。</p>${h.src([['官網：文化徑×山林徑', 'https://puma.taipei/policies/%E5%8F%B0%E5%8C%97%E6%96%87%E5%8C%96%E5%BE%91%C3%97%E5%B1%B1%E6%9E%97%E5%BE%91'], ['文化徑短片', h.yt('XbSM61Deh5Y')], ['環南市場短片', h.yt('Hr3pDBOKmwo')]])}</div>
+      <div class="card"><span class="emoji">❤️</span><h3>每個族群都是台北人</h3><p><b>原住民族政策</b>：增設文化健康站、原民文化交流基地，返鄉交通補助一年兩次。<b>新住民政策</b>：1999 增加越南語、印尼語等外語服務，設新住民創業諮詢窗口。文化徑也會串起原住民族、客家和新住民的故事。</p>${h.src([['官網：原住民族政策', 'https://puma.taipei/policies/%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%97%8F%E6%94%BF%E7%AD%96'], ['官網：新住民政策', 'https://puma.taipei/policies/%E6%96%B0%E4%BD%8F%E6%B0%91%E6%94%BF%E7%AD%96'], ['內湖南港短片', h.yt('olDDRZLtit8')]])}</div>
+      <div class="card"><span class="emoji">📖</span><h3>把台北的歷史找回來<br><span class="name" style="font-size:1rem">重建明治橋</span></h3><p>明治橋（後來叫中山橋）2002 年拆除後，石材放了 20 多年還沒重組。他提出要重建，並說不一定要放回原地，例如<b>新生公園</b>也是選項，還能變成自行車道的一部分。</p>${h.src([['遠見《城市學》專訪', 'https://city.gvm.com.tw/article/133307'], ['相關影片', h.yt('0ROGbdBQsSA')]])}</div>
+    </div>
+  </div>
+</section>
+<section class="section" id="list">
   <div class="wrap">
     <div class="grid grid-2">
       <div class="card"><span class="emoji">🌐</span><h3>它在哪裡看得到所有政見？<br><span class="name" style="font-size:1rem">競選官網</span></h3>
@@ -42,7 +66,7 @@ module.exports = {
     </div>
   </div>
 </section>
-<section class="section alt">
+<section class="section alt" id="mirror">
   <div class="wrap narrow">
     <div class="section-head"><p class="kicker">鏡文學專訪</p><h2>📖〈走出暗黝森林──沈伯洋談閱讀、陪伴與文化〉</h2></div>
     <div class="card">
