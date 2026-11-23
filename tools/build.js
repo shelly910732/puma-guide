@@ -11,7 +11,7 @@ const UPDATED = '2026-11-23';
 const VIDEOS = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'videos.json'), 'utf8'));
 const crypto = require('crypto');
 const ver = (f) => crypto.createHash('md5').update(fs.readFileSync(path.join(ROOT, f))).digest('hex').slice(0, 8);
-const CSS_V = ver('assets/style.css'), JS_V = ver('assets/site.js');
+const CSS_V = ver('assets/style.css'), JS_V = ver('assets/site.js'), ICON_V = ver('assets/favicon.svg');
 const V = Object.fromEntries(VIDEOS.map((v) => [v.id, v]));
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -99,7 +99,10 @@ function layout(p, body) {
 <meta property="og:title" content="${esc(p.title || SITE)}">
 <meta property="og:description" content="${esc(p.desc)}">
 <meta name="theme-color" content="#fff8ec">
-<link rel="icon" href="data:image/svg+xml,${encodeURIComponent(sun(64, false).replace(/\s+/g, ' '))}">
+<link rel="icon" href="assets/favicon.svg?v=${ICON_V}" type="image/svg+xml">
+<link rel="icon" href="assets/icon-192.png?v=${ICON_V}" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-180.png?v=${ICON_V}">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
@@ -109,7 +112,7 @@ function layout(p, body) {
 <a class="sr-only" href="#main">跳到主要內容</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html">${sun(40)}<span>${SITE}<small>${SITE_SUB}</small></span></a>
+    <a class="brand" href="index.html"><img src="assets/favicon.svg?v=${ICON_V}" width="40" height="40" alt=""><span>${SITE}<small>${SITE_SUB}</small></span></a>
     <nav class="top-nav" aria-label="主選單">${NAV.map((n) => `<a href="${n.href}"${cur(n)}>${n.label}</a>`).join('')}</nav>
   </div>
 </header>
