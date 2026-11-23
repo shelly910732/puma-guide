@@ -71,6 +71,7 @@ module.exports = {
       <div class="card"><h3>🎒 政見照顧到年輕人</h3><p><b>城市青年基金</b>、<b>青年 AI 錢包</b>、<b>青年宅</b>、YouBike 尖峰免費，都是年輕人生活中用得到的。</p></div>
       <div class="card"><h3>💪 形象鮮明</h3><p>被中國立案偵查還不退縮，在重視台灣主體性的人眼中，他是有骨氣的人。</p></div>
       <div class="card"><h3>👨‍👧 人生故事</h3><p>他透過收養成為父親，常談家庭和孩子，讓人覺得有人情味。</p></div>
+      <div class="card"><h3>🤝 有團隊精神</h3><p>他把民進黨的議員候選人當成「<b>台北隊</b>」一起作戰：帶著議員一起站台，在自己的頻道為議員一位一位拍介紹影片；也到<b>台中、新竹</b>幫其他縣市的候選人車掃、助選。2023 年吳沛憶選立委時，他一口答應幫忙輔選，說這是「不分區該為團隊做的」。</p>${h.src([['聯合新聞網：議員稱他「台北隊長」', 'https://udn.com/news/story/124652/9500624'], ['ETtoday：吳沛憶談他幫忙輔選', 'https://www.ettoday.net/news/20260515/3166173.htm'], ['他為議員拍的影片（例）', h.yt('oGUlmV96Z3w')], ['台中車掃（影片）', h.yt('yUjQtotkBCs')], ['新竹助選（影片）', h.yt('heXi-qbEraI')]])}</div>
     </div>
     <div class="note"><strong>也要知道：</strong>年輕人並不是一面倒，也有人分享自己的孩子和同學不支持他。外界的批評和他的回應，整理在「<a href="think.html">思辨題</a>」。</div>
     ${h.src([['Yahoo 新聞：TVBS 民調年輕族群', 'https://tw.news.yahoo.com/tvbs%E6%B0%91%E8%AA%BF-%E5%B9%B4%E8%BC%95%E4%BA%BA%E6%AF%94%E8%BC%83%E5%96%9C%E6%AD%A1%E6%B2%88%E4%BC%AF%E6%B4%8B-20-39%E6%AD%B2%E6%94%AF%E6%8C%81%E5%BA%A6%E8%B4%8F%E8%94%A3%E8%90%AC%E5%AE%8921-091513038.html'], ['Yahoo 新聞：留學兒子的不同看法', 'https://tw.news.yahoo.com/%E4%BB%A5%E7%82%BA%E5%B9%B4%E8%BC%95%E4%BA%BA%E6%8C%BA%E6%B2%88%E4%BC%AF%E6%B4%8B-%E7%95%99%E5%AD%B8%E5%85%92-%E5%8F%A5-%E6%AD%A3%E5%B8%B8%E4%BA%BA%E9%83%BD%E4%B8%8D%E6%9C%83%E6%8A%95-%E5%AA%BD%E5%82%BB%E7%9C%BC-004345150.html']])}

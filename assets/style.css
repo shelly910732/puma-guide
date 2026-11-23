@@ -179,7 +179,7 @@ a.card:hover { transform: translateY(-3px); color: var(--text); }
 .note strong:first-child { color: var(--accent-strong); }
 .src { font-size: .85rem; color: var(--muted); }
 .src a { color: var(--muted); }
-.src::before { content: "📎 "; }
+.src::before { content: ""; display: inline-block; width: 1.1em; height: 1.1em; vertical-align: -.2em; margin-right: .3em; background: var(--accent); -webkit-mask: var(--mini-link) center / contain no-repeat; mask: var(--mini-link) center / contain no-repeat; }
 
 /* policy card (title = question, body keeps policy name) */
 .policy { position: relative; }
@@ -367,3 +367,6 @@ main ul:not(.vlist):not(.timeline):not(.chips) > li::before {
 .chapter ul { padding-left: 1.7em !important; }
 .chapter li { padding-left: 0 !important; }
 main ol li::marker { color: var(--accent); font-weight: 900; }
+:root { --mini-link: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.8' stroke-linecap='round'%3E%3Cpath d='M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2'/%3E%3Cpath d='M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2'/%3E%3Ccircle cx='20' cy='20' r='2.6' fill='%23000' stroke='none'/%3E%3C/svg%3E"); }
+.ico-link { display: inline-block; width: 1em; height: 1em; vertical-align: -.12em; background: var(--sun); -webkit-mask: var(--mini-link) center / contain no-repeat; mask: var(--mini-link) center / contain no-repeat; }
+.card .emoji.ico-link { width: 2rem; height: 2rem; }

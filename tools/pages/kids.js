@@ -112,9 +112,10 @@ module.exports = {
       <li>讀大學時去輔導有偏差行為的少年，為了跟他們聊得上話，自己學了塔羅牌；那時就決定以後要<b>收養</b>。</li>
       <li>和太太收養女兒「小麻糬」。女兒剛來時跟爸爸不熟，現在父女超親密。</li>
       <li>媽媽過世了，他的包包裡還帶著媽媽的絲巾。</li></ul></div>
-    <div class="chapter s-eq"><h3><span class="facet">情商</span>😄 愛玩、也很會自嘲</h3><ul>
+    <div class="chapter s-eq"><h3><span class="facet">情商</span>😄 愛玩、會自嘲、重團隊</h3><ul>
       <li>動漫宅：最喜歡《新世紀福音戰士》的碇真嗣，也愛玩戰鬥陀螺、光劍，萬聖節扮成勇者欣梅爾。</li>
-      <li>被罵「人渣」時，他笑著回：「可能鬍子沒刮，渣渣的。」</li></ul></div>
+      <li>被罵「人渣」時，他笑著回：「可能鬍子沒刮，渣渣的。」</li>
+      <li>很有<b>團隊精神</b>：不只為自己拉票，也幫議員候選人站台、拍介紹影片，還跑到台中、新竹幫其他縣市的候選人加油。他說這是「為團隊做的」。</li></ul></div>
     ${h.src([['鏡週刊：閱讀與成長', 'https://www.mirrormedia.mg/story/20260907cul006'], ['追夢的人（影片）', h.yt('7C1Utss28Ac')], ['宵夜鏡來講（影片）', h.yt('x-ukdSUCmIM')], ['中央社：他回應立案偵查', 'https://www.cna.com.tw/news/aipl/202510280086.aspx'], ['德國國會發言（影片）', h.yt('aw0_kIkL3GA')], ['被罵人渣的回應（影片）', h.yt('yCQKZIZ9D2g')], ['《台北值得沈伯洋》原曲（網友創作）', h.yt('obUSoRRy2As')]])}
   </div>
 </section>
