@@ -301,3 +301,49 @@ tr:last-child td { border-bottom: 0; }
 .site-footer a { color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+/* ---------- 60 秒認識他：限時動態式輪播 ---------- */
+.story { position: relative; padding: 16px 0 8px; background: linear-gradient(180deg, var(--bg-2), var(--bg)); }
+.story-frame { position: relative; max-width: 560px; margin: 0 auto; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); background: var(--card); }
+.story-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; scroll-behavior: smooth; }
+.story-track::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 100%; scroll-snap-align: start; min-height: min(78vh, 600px); padding: 44px 24px 92px; display: flex; flex-direction: column; justify-content: center; gap: 10px; position: relative; overflow: hidden;
+  background: radial-gradient(circle at 80% 10%, color-mix(in srgb, var(--sc) 30%, transparent) 0, transparent 55%), linear-gradient(160deg, color-mix(in srgb, var(--sc) 18%, var(--card)), var(--card)); }
+.slide .big-emoji { font-size: 4.2rem; line-height: 1; width: 104px; height: 104px; border-radius: 50%; display: grid; place-items: center; background: var(--card); box-shadow: var(--shadow); }
+.slide .facet { display: inline-block; align-self: flex-start; padding: 2px 14px; border-radius: 999px; background: var(--sc); color: #fff; font-weight: 900; letter-spacing: .1em; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .slide .facet { color: #1d1812; } }
+.slide h2 { font-size: clamp(1.6rem, 6.5vw, 2.2rem); margin: 0; }
+.slide p { font-size: 1.08rem; margin: 0; }
+.slide .clip { display: flex; gap: 12px; align-items: center; margin-top: 8px; background: var(--card); border-radius: 16px; padding: 8px; text-decoration: none; color: var(--text); box-shadow: var(--shadow); max-width: 420px; }
+.slide .clip img { width: 112px; aspect-ratio: 16/9; object-fit: cover; border-radius: 10px; flex: none; }
+.slide .clip span { font-size: .9rem; font-weight: 800; line-height: 1.4; }
+.slide .clip span small { display: block; font-weight: 500; color: var(--muted); }
+.s-intro { --sc: var(--sun); } .s-learn { --sc: var(--e); } .s-career { --sc: var(--h); } .s-brave { --sc: var(--r); } .s-love { --sc: var(--a); } .s-eq { --sc: var(--t); } .s-heart { --sc: var(--sun); }
+.s-intro h1 { margin: 0; font-size: clamp(2.4rem, 11vw, 3.4rem); }
+.s-intro .rise { animation: rise 1.6s ease-out both; }
+@keyframes rise { from { transform: translateY(40px) scale(.8); opacity: 0; } to { transform: none; opacity: 1; } }
+.slide.on .pop { animation: pop .6s ease-out both; }
+.slide.on .pop:nth-child(2) { animation-delay: .1s; } .slide.on .pop:nth-child(3) { animation-delay: .2s; } .slide.on .pop:nth-child(4) { animation-delay: .3s; } .slide.on .pop:nth-child(5) { animation-delay: .4s; } .slide.on .pop:nth-child(6) { animation-delay: .5s; }
+@keyframes pop { from { transform: translateY(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+.facets5 { display: flex; flex-wrap: wrap; gap: 6px; }
+.facets5 span { padding: 2px 10px; border-radius: 999px; background: var(--card); font-weight: 800; font-size: .92rem; box-shadow: var(--shadow); }
+.story-bars { position: absolute; top: 12px; left: 16px; right: 16px; display: flex; gap: 4px; z-index: 3; }
+.story-bars i { flex: 1; height: 4px; border-radius: 4px; background: color-mix(in srgb, var(--text) 18%, transparent); overflow: hidden; }
+.story-bars i b { display: block; height: 100%; width: 0; background: var(--accent); }
+.story-bars i.done b { width: 100%; }
+.story-ctrl { position: absolute; left: 0; right: 0; bottom: 14px; display: flex; justify-content: center; align-items: center; gap: 10px; z-index: 3; }
+.story-ctrl button { font: inherit; font-weight: 800; border: 0; border-radius: 999px; padding: 8px 14px; background: var(--card); color: var(--text); box-shadow: var(--shadow); cursor: pointer; min-width: 44px; min-height: 44px; }
+.story-ctrl .next { background: var(--accent); color: var(--on-accent); }
+.story-skip { display: block; text-align: center; margin: 10px auto 0; font-weight: 800; }
+.story-note { text-align: center; font-size: .8rem; color: var(--muted); margin: 6px 16px 0; }
+.no-js .story-bars, .no-js .story-ctrl { display: none; }
+@media (prefers-reduced-motion: reduce) { .s-intro .rise, .slide.on .pop { animation: none; } }
+
+/* story chapters (kids page) */
+.chapter { border-left: 6px solid var(--sc); padding: 4px 0 4px 16px; margin-bottom: 22px; }
+.chapter h3 { display: flex; align-items: center; gap: 8px; }
+.chapter h3 .facet { padding: 0 12px; border-radius: 999px; background: var(--sc); color: #fff; font-size: .95rem; }
+.chapter ul { list-style: none; padding: 0; }
+.chapter li { padding-left: 1.6em; position: relative; }
+.chapter li::before { content: "●"; color: var(--sc); position: absolute; left: .3em; font-size: .8em; top: .25em; }
+.s-intro .rise svg { width: 100%; height: auto; display: block; }

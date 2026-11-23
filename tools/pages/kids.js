@@ -95,18 +95,27 @@ module.exports = {
 
 <section class="section" id="story">
   <div class="wrap narrow">
-    <div class="section-head"><p class="kicker">他是怎麼長大的？</p><h2>📖 沈伯洋的小故事</h2></div>
-    <ol class="timeline">
-      <li><span class="dot">📚</span><b>愛看書的台北小孩</b>在台北五分埔長大，小時候看了很多課外書，最想當<b>小說家</b>，最喜歡金庸小說裡的楊過。</li>
-      <li><span class="dot">🎷</span><b>高中吹黑管</b>讀建國中學時參加管樂，吹黑管，也當過鄉土文化研究社社長。</li>
-      <li><span class="dot">🔮</span><b>為了聊天學塔羅牌</b>讀台大法律系時去輔導有偏差行為的少年，為了跟他們聊得上話，自己學了塔羅牌。那時他就決定，以後要<b>收養</b>小孩。</li>
-      <li><span class="dot">👨‍🏫</span><b>「撲馬老師」</b>當過補習班老師，還把刑法課免費放上 YouTube。</li>
-      <li><span class="dot">🎓</span><b>留美博士、大學老師</b>去美國讀犯罪學博士，回台灣在台北大學教書，研究中國怎麼用假訊息影響台灣，也創辦推廣民防的「黑熊學院」。</li>
-      <li><span class="dot">👧</span><b>當爸爸了</b>和太太一起收養女兒，小名叫「小麻糬」。女兒剛來時跟爸爸不熟，現在父女超親密。</li>
-      <li><span class="dot">🤖</span><b>動漫宅</b>最喜歡《新世紀福音戰士》的碇真嗣，也愛玩戰鬥陀螺、光劍。</li>
-      <li><span class="dot">🗳️</span><b>從立委到參選市長</b>2024 年當上立法委員，2026 年代表民進黨參選台北市長。</li>
-    </ol>
-    ${h.src([['鏡週刊：閱讀與成長', 'https://www.mirrormedia.mg/story/20260907cul006'], ['追夢的人（影片）', h.yt('7C1Utss28Ac')], ['宵夜鏡來講（影片）', h.yt('x-ukdSUCmIM')]])}
+    <div class="section-head"><p class="kicker">他是怎麼長大的？</p><h2>📖 沈伯洋的小故事：五個關鍵字</h2>
+      <p class="lead">照著網友應援歌《台北值得沈伯洋》的主題（學識、經歷、膽識、愛、情商），從小到大說他的故事。</p></div>
+    <div class="chapter s-learn"><h3><span class="facet">學識</span>📚 愛看書的五分埔少年</h3><ul>
+      <li>在台北五分埔長大，小時候看很多課外書，最想當<b>小說家</b>，最喜歡金庸小說裡的楊過。</li>
+      <li>讀建國中學時吹黑管，也當過鄉土文化研究社社長。</li>
+      <li>讀台大法律系，後來去美國讀<b>犯罪學博士</b>。</li></ul></div>
+    <div class="chapter s-career"><h3><span class="facet">經歷</span>🧭 從「撲馬老師」到立委</h3><ul>
+      <li>當過補習班老師「撲馬老師」，還把刑法課免費放上 YouTube。</li>
+      <li>在台北大學法律系當副教授，研究中國怎麼用假訊息影響台灣，也創辦推廣民防的「<b>黑熊學院</b>」。</li>
+      <li>2024 年當上立法委員，2026 年代表民進黨參選台北市長。</li></ul></div>
+    <div class="chapter s-brave"><h3><span class="facet">膽識</span>🦁 被點名也不退縮</h3><ul>
+      <li>2025 年 10 月，中國重慶公安說要對他「立案偵查」，他的回應是「台灣人沒在怕」。</li>
+      <li>同年 11 月到德國國會，用全英文說明台灣的處境。</li></ul></div>
+    <div class="chapter s-love"><h3><span class="facet">愛</span>❤️ 透過收養成為爸爸</h3><ul>
+      <li>讀大學時去輔導有偏差行為的少年，為了跟他們聊得上話，自己學了塔羅牌；那時就決定以後要<b>收養</b>。</li>
+      <li>和太太收養女兒「小麻糬」。女兒剛來時跟爸爸不熟，現在父女超親密。</li>
+      <li>媽媽過世了，他的包包裡還帶著媽媽的絲巾。</li></ul></div>
+    <div class="chapter s-eq"><h3><span class="facet">情商</span>😄 愛玩、也很會自嘲</h3><ul>
+      <li>動漫宅：最喜歡《新世紀福音戰士》的碇真嗣，也愛玩戰鬥陀螺、光劍，萬聖節扮成勇者欣梅爾。</li>
+      <li>被罵「人渣」時，他笑著回：「可能鬍子沒刮，渣渣的。」</li></ul></div>
+    ${h.src([['鏡週刊：閱讀與成長', 'https://www.mirrormedia.mg/story/20260907cul006'], ['追夢的人（影片）', h.yt('7C1Utss28Ac')], ['宵夜鏡來講（影片）', h.yt('x-ukdSUCmIM')], ['中央社：他回應立案偵查', 'https://www.cna.com.tw/news/aipl/202510280086.aspx'], ['德國國會發言（影片）', h.yt('aw0_kIkL3GA')], ['被罵人渣的回應（影片）', h.yt('yCQKZIZ9D2g')], ['《台北值得沈伯洋》原曲（網友創作）', h.yt('obUSoRRy2As')]])}
   </div>
 </section>
 

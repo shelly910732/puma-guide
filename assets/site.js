@@ -24,6 +24,56 @@
     }
   }
 
+  // 1b. 60 秒認識他：auto-playing story slides (swipe works without JS)
+  var story = document.querySelector('[data-story]');
+  if (story) {
+    story.classList.remove('no-js');
+    var track = story.querySelector('.story-track');
+    var slides = Array.prototype.slice.call(track.children);
+    var bars = story.querySelectorAll('.story-bars i');
+    var btnPlay = story.querySelector('[data-play]');
+    var DUR = 5500, idx = 0, t0 = 0, elapsed = 0, playing = true, raf = null;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) playing = false;
+    function paint(p) {
+      Array.prototype.forEach.call(bars, function (b, i) {
+        b.className = i < idx ? 'done' : '';
+        b.firstChild.style.width = i === idx ? Math.min(100, p * 100) + '%' : (i < idx ? '100%' : '0');
+      });
+    }
+    function go(i, fromScroll) {
+      idx = Math.max(0, Math.min(slides.length - 1, i));
+      slides.forEach(function (s, k) { s.classList.toggle('on', k === idx); });
+      if (!fromScroll) track.scrollTo({ left: slides[idx].offsetLeft, behavior: reduce ? 'auto' : 'smooth' });
+      elapsed = 0; t0 = performance.now(); paint(0);
+    }
+    function tick(now) {
+      if (playing && !document.hidden) {
+        var p = (elapsed + now - t0) / DUR;
+        paint(p);
+        if (p >= 1) { if (idx < slides.length - 1) go(idx + 1); else { playing = false; label(); } }
+      } else { t0 = now; }
+      raf = requestAnimationFrame(tick);
+    }
+    function label() { btnPlay.textContent = playing ? '⏸ 暫停' : '▶ 播放'; btnPlay.setAttribute('aria-pressed', playing ? 'false' : 'true'); }
+    story.querySelector('[data-prev]').addEventListener('click', function () { go(idx - 1); });
+    story.querySelector('[data-next]').addEventListener('click', function () { go(idx + 1); });
+    btnPlay.addEventListener('click', function () {
+      if (!playing && idx === slides.length - 1) go(0);
+      playing = !playing; t0 = performance.now(); label();
+    });
+    var st;
+    track.addEventListener('scroll', function () {
+      clearTimeout(st);
+      st = setTimeout(function () {
+        var i = Math.round(track.scrollLeft / track.clientWidth);
+        if (i !== idx) go(i, true);
+      }, 120);
+    }, { passive: true });
+    track.addEventListener('pointerdown', function () { if (playing) { playing = false; label(); } });
+    label(); go(0, true); raf = requestAnimationFrame(tick);
+  }
+
   // 2. Video database filters
   var db = document.querySelector('[data-db]');
   if (db) {

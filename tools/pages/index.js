@@ -4,16 +4,64 @@ module.exports = {
   desc: '給家長和小朋友的台北市長候選人沈伯洋整理：他是誰、HEART 五大政見、親子想一想、適合全家看的影片，以及完整資料。',
   section: 'home',
   body: (h) => `
-<section class="hero">
+<section class="story no-js" data-story aria-label="60 秒認識沈伯洋">
   <div class="wrap">
-    <div>
-      <span class="eyebrow">2026 台北市長選舉｜親子版</span>
-      <h1>台北的陽光</h1>
-      <p class="sub">認識市長候選人沈伯洋</p>
-      <p><b>沈伯洋</b>（大家叫他 Puma），民進黨提名的台北市長候選人，<b>3 號</b>。他當過大學老師，專門研究中國的假訊息；他也是一位透過收養成為爸爸的人。</p>
-      <div class="btn-row"><a class="btn" href="#heart">他想做什麼？</a><a class="btn ghost" href="#doors">我想看更多</a></div>
+    <div class="story-frame">
+      <div class="story-bars" aria-hidden="true">${'<i><b></b></i>'.repeat(7)}</div>
+      <div class="story-track">
+        <article class="slide s-intro on">
+          <div class="rise" style="width:150px">${h.heroArt}</div>
+          <span class="eyebrow pop">2026 台北市長選舉｜親子版</span>
+          <h1 class="pop">台北的陽光</h1>
+          <p class="pop"><b>60 秒認識 3 號 沈伯洋</b>（大家叫他 Puma）</p>
+          <div class="facets5 pop"><span>📚 學識</span><span>🧭 經歷</span><span>🦁 膽識</span><span>❤️ 愛</span><span>😄 情商</span></div>
+        </article>
+        <article class="slide s-learn">
+          <span class="big-emoji pop">📚</span><span class="facet pop">學識</span>
+          <h2 class="pop">愛看書的五分埔少年</h2>
+          <p class="pop">小時候最想當小說家。後來讀台大法律系，再去美國讀<b>犯罪學博士</b>。</p>
+          <a class="clip pop" href="${h.yt('dmLF1wjt1CU')}"><img src="${h.thumb('dmLF1wjt1CU')}" alt="" loading="lazy"><span>從叛逆小孩到留美博士<small>鏡文學｜5 分鐘</small></span></a>
+        </article>
+        <article class="slide s-career">
+          <span class="big-emoji pop">🧭</span><span class="facet pop">經歷</span>
+          <h2 class="pop">從「撲馬老師」到立委</h2>
+          <p class="pop">當過補習班老師、大學教授，研究中國的假訊息，創辦「黑熊學院」，2024 年當上立委。</p>
+          <a class="clip pop" href="${h.yt('0jOSng47e4I')}"><img src="${h.thumb('0jOSng47e4I')}" alt="" loading="lazy"><span>那些年，我在南陽街<small>沈伯洋Puma｜8 分鐘</small></span></a>
+        </article>
+        <article class="slide s-brave">
+          <span class="big-emoji pop">🦁</span><span class="facet pop">膽識</span>
+          <h2 class="pop">被中國立案偵查，也不退縮</h2>
+          <p class="pop">2025 年，中國重慶公安說要「立案偵查」他。他的回應是：「台灣人沒在怕。」</p>
+          <p class="pop src"><a href="https://www.cna.com.tw/news/aipl/202510280086.aspx">中央社報導</a></p>
+        </article>
+        <article class="slide s-love">
+          <span class="big-emoji pop">❤️</span><span class="facet pop">愛</span>
+          <h2 class="pop">透過收養，成為爸爸</h2>
+          <p class="pop">大學時輔導少年，就決定以後要收養。現在有個女兒叫「小麻糬」，包包裡還帶著過世媽媽的絲巾。</p>
+          <a class="clip pop" href="${h.yt('YGkPslUR84c')}"><img src="${h.thumb('YGkPslUR84c')}" alt="" loading="lazy"><span>孩子來的那天還是慌了<small>親子天下｜17 分鐘</small></span></a>
+        </article>
+        <article class="slide s-eq">
+          <span class="big-emoji pop">😄</span><span class="facet pop">情商</span>
+          <h2 class="pop">被罵也能笑著回</h2>
+          <p class="pop">愛動漫、會扮勇者欣梅爾、玩光劍。被罵「人渣」時，他笑說：「可能鬍子沒刮，渣渣的。」</p>
+          <a class="clip pop" href="${h.yt('yCQKZIZ9D2g')}"><img src="${h.thumb('yCQKZIZ9D2g')}" alt="" loading="lazy"><span>被罵人渣的神回覆<small>鏡新聞｜34 秒</small></span></a>
+        </article>
+        <article class="slide s-heart">
+          <span class="big-emoji pop">☀️</span>
+          <h2 class="pop">他想為台北做的 31 件事</h2>
+          <p class="pop">分成五類，字母拼起來是 <b>HEART</b>（心）。</p>
+          <div class="facets5 pop">${h.HEART.map((x) => `<span>${x.k}｜${x.zh}</span>`).join('')}</div>
+          <div class="btn-row pop" style="margin-top:6px"><a class="btn" href="#heart">開始認識他 ↓</a><a class="btn ghost" href="kids.html">我是小朋友</a></div>
+        </article>
+      </div>
+      <div class="story-ctrl">
+        <button type="button" data-prev aria-label="上一張">◀</button>
+        <button type="button" data-play aria-pressed="false">⏸ 暫停</button>
+        <button type="button" class="next" data-next aria-label="下一張">▶</button>
+      </div>
     </div>
-    <div class="art">${h.heroArt}</div>
+    <a class="story-skip" href="#heart">跳過，直接看網站 ↓</a>
+    <p class="story-note">五個關鍵字的靈感來自網友創作的應援歌<a href="${h.yt('obUSoRRy2As')}">《台北值得沈伯洋》</a>（非官方）。</p>
   </div>
 </section>
 

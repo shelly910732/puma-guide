@@ -104,12 +104,12 @@ module.exports = {
       <li>以<b>選舉公報</b>的 31 項為主架構，細節取自競選官網各政策頁，以及順報第 2～4 期。</li>
       <li><b>洋流誌</b>是 5 本文學創作小誌，不是政策說明，所以沒有當作政見依據。</li>
       <li>官網有些數字不一致：城市青年基金寫「滿 22 歲領 50 萬」或「23 歲可領近 50 萬元」；轉職支持的年齡，公報寫 45 歲以上，順報第 3 期寫 40 歲以上；心理諮商的年齡寫法也不同。以正式公布為準。</li>
-      <li>他在 Threads 提過想讓文化幣延伸到 30 歲，但官網政策頁目前沒有寫到年齡。</li>
+      <li>他在 Threads 和官方 YouTube 短片都說要「文化幣延伸至 30 歲」，但官網政策頁目前沒有寫到細節。</li>
       <li>8 月發表政見時報導提過的「永續長、設計長、夜間市長」，目前的官網政策頁和公報沒有看到，所以沒有列出。</li>
       <li>官網寫青年政策每年大約要花 29 億元。政見能不能做到、經費夠不夠，可以參考<a href="think.html">思辨題</a>。</li>
       <li>以下是候選人陣營自己的說法；另一位主要候選人蔣萬安也有政見，建議一起比較。</li>
     </ul>
-    ${h.src([['選舉公報政見', 'https://puma.taipei/election-bulletin'], ['HEART 政策生態系', 'https://puma.taipei/heart'], ['政策專區', 'https://puma.taipei/policies'], ['順報', 'https://puma.taipei/soon-daily'], ['洋流誌', 'https://puma.taipei/soonmook'], ['中央社：發布競選願景（2026-08-11）', 'https://www.cna.com.tw/news/aloc/202608110044.aspx'], ['ETtoday：政見發表會（2026-11-14）', 'https://www.ettoday.net/news/20261114/3272185.htm'], ['聯合新聞網：TPASS 納共享機車', 'https://udn.com/news/story/124652/9683613'], ['東森新聞：政見會 HEART 五大政見', 'https://news.ebc.net.tw/news/politics/580675'], ['沈伯洋 Threads：文化幣延伸到 30 歲', 'https://www.threads.com/@pumashen/video/DfgNf70mfGS/']])}
+    ${h.src([['選舉公報政見', 'https://puma.taipei/election-bulletin'], ['HEART 政策生態系', 'https://puma.taipei/heart'], ['政策專區', 'https://puma.taipei/policies'], ['順報', 'https://puma.taipei/soon-daily'], ['洋流誌', 'https://puma.taipei/soonmook'], ['中央社：發布競選願景（2026-08-11）', 'https://www.cna.com.tw/news/aloc/202608110044.aspx'], ['ETtoday：政見發表會（2026-11-14）', 'https://www.ettoday.net/news/20261114/3272185.htm'], ['聯合新聞網：TPASS 納共享機車', 'https://udn.com/news/story/124652/9683613'], ['東森新聞：政見會 HEART 五大政見', 'https://news.ebc.net.tw/news/politics/580675'], ['沈伯洋 Threads：文化幣延伸到 30 歲', 'https://www.threads.com/@pumashen/video/DfgNf70mfGS/'], ['官方短片：文化幣延伸至 30 歲', h.yt('EP0MTCvkQ2g')]])}
   </div>
 </section>`,
 };

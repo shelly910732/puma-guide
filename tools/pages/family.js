@@ -35,7 +35,7 @@ module.exports = {
     <div class="section-head">
       <p class="kicker">大人也有好玩的一面</p>
       <h2>😆 有趣片段</h2>
-      <p class="lead">都是 1～8 分鐘的短片。日期寫「約」的，是依 YouTube 顯示的上傳時間推算。</p>
+      <p class="lead">都是 1～8 分鐘的短片。日期是 YouTube 上傳日（台灣時間）。</p>
     </div>
 
     <h3>🗡️ 勇者欣梅爾登場</h3>
@@ -57,9 +57,10 @@ module.exports = {
     <div class="vgrid">
       ${h.vcard('2_j3dZxzJ4k', { title: '業餘棒球聯賽開球', why: '他自嘲投球只有「ㄦ級分」。' })}
       ${h.vcard('nYX8U9XbOGw', { title: '網友 Vlog：去看棒球，隔壁竟然是沈伯洋', why: '一位網友去大巨蛋看球、再到東京巨蛋看經典賽的紀錄。', caveat: '這是網友拍的 Vlog，我們沒有看完全片，無法確認他在片中出現多久。' })}
+      ${h.vcard('nBKI5DtH4Lc', { title: '2024 年 12 強，在東京巨蛋幫中華隊加油', why: '政論節目和在東京巨蛋看球的他視訊連線。', caveat: '這是新聞節目，不是他自己拍的看球影片。' })}
       ${h.vcard('5j7wA5HZ6Qs', { title: '被問「棒球支持哪一隊」一秒語塞', why: '他的回答是：「每一隊我都非常喜歡」。' })}
     </div>
-    <p class="caveat" style="margin-top:8px">我們沒有找到「看棒球時大聲吶喊」的影片；如果你知道是哪一支，可以再補上。</p>
+    <p class="caveat" style="margin-top:8px">他在球場大聲吶喊的影片，可能是貼在他的 Facebook 或 Threads；這兩個平台要登入才能搜尋，所以還沒放上來。</p>
 
     <h3 style="margin-top:28px">🎤 動漫金句和應援舞</h3>
     <div class="vgrid">
@@ -71,6 +72,8 @@ module.exports = {
     <h3 style="margin-top:28px">🏃 生活小片段</h3>
     <div class="vgrid">
       ${h.vcard('EJ_m5ZuVR58', { title: '公園遇到大哥，一起挑戰練核心', why: '他頻道裡觀看最多的短片之一，超過 140 萬次。' })}
+      ${h.vcard('yCQKZIZ9D2g', { title: '被罵「人渣」的神回覆', why: '他笑說：「可能鬍子沒刮，渣渣的。」' })}
+      ${h.vcard('r1AO7F7xmJw', { title: '到披薩店自己動手做披薩', why: '他自己頻道的短片，觀看將近 50 萬次。' })}
       ${h.vcard('eOo7ckDpx3c', { title: '政見會前一早，在家跟女兒做洋流飄帶', why: '記者以為他在閉關準備，結果是在陪女兒做勞作。' })}
     </div>
     <div class="note" style="margin-top:20px"><strong>想看更多？</strong>到<a href="videos.html#fun">影音資料庫</a>，可以依類型、年份篩選，也可以搜尋關鍵字。</div>
