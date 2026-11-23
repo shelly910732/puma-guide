@@ -99,7 +99,7 @@ module.exports = {
       <p class="lead">照著網友應援歌《台北值得沈伯洋》的主題（學識、經歷、膽識、愛、情商），從小到大說他的故事。</p></div>
     <div class="chapter s-learn"><h3><span class="facet">學識</span>📚 愛看書的五分埔少年</h3><ul>
       <li>在台北五分埔長大，小時候看很多課外書，最想當<b>小說家</b>，最喜歡金庸小說裡的楊過。</li>
-      <li>讀建國中學時吹黑管，也當過鄉土文化研究社社長。</li>
+      <li>讀建國中學時吹黑管，也當過鄉土文化研究社社長，還邀請作家劉克襄帶社員一起踏查台北。</li>
       <li>讀台大法律系，後來去美國讀<b>犯罪學博士</b>。</li></ul></div>
     <div class="chapter s-career"><h3><span class="facet">經歷</span>🧭 從「撲馬老師」到立委</h3><ul>
       <li>當過補習班老師「撲馬老師」，還把刑法課免費放上 YouTube。</li>
@@ -115,8 +115,9 @@ module.exports = {
     <div class="chapter s-eq"><h3><span class="facet">情商</span>😄 愛玩、會自嘲、重團隊</h3><ul>
       <li>動漫宅：最喜歡《新世紀福音戰士》的碇真嗣，也愛玩戰鬥陀螺、光劍，萬聖節扮成勇者欣梅爾。</li>
       <li>被罵「人渣」時，他笑著回：「可能鬍子沒刮，渣渣的。」</li>
+      <li>被說是「下流」時，他引用《道德經》回應：水本來就往低處流，流到每一個巷弄，傾聽每一個人的聲音，「不怕下流，只怕不流」。</li>
       <li>很有<b>團隊精神</b>：不只為自己拉票，也幫議員候選人站台、拍介紹影片，還跑到台中、新竹幫其他縣市的候選人加油。他說這是「為團隊做的」。</li></ul></div>
-    ${h.src([['鏡週刊：閱讀與成長', 'https://www.mirrormedia.mg/story/20260907cul006'], ['追夢的人（影片）', h.yt('7C1Utss28Ac')], ['宵夜鏡來講（影片）', h.yt('x-ukdSUCmIM')], ['中央社：他回應立案偵查', 'https://www.cna.com.tw/news/aipl/202510280086.aspx'], ['德國國會發言（影片）', h.yt('aw0_kIkL3GA')], ['被罵人渣的回應（影片）', h.yt('yCQKZIZ9D2g')], ['《台北值得沈伯洋》原曲（網友創作）', h.yt('obUSoRRy2As')]])}
+    ${h.src([['鏡週刊：閱讀與成長', 'https://www.mirrormedia.mg/story/20260907cul006'], ['追夢的人（影片）', h.yt('7C1Utss28Ac')], ['宵夜鏡來講（影片）', h.yt('x-ukdSUCmIM')], ['中央社：他回應立案偵查', 'https://www.cna.com.tw/news/aipl/202510280086.aspx'], ['德國國會發言（影片）', h.yt('aw0_kIkL3GA')], ['被罵人渣的回應（影片）', h.yt('yCQKZIZ9D2g')], ['自由時報：引《道德經》回應「下流」', 'https://news.ltn.com.tw/news/politics/breakingnews/5619682'], ['《台北值得沈伯洋》原曲（網友創作）', h.yt('obUSoRRy2As')]])}
   </div>
 </section>
 
