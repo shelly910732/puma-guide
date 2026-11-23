@@ -11,7 +11,8 @@ const UPDATED = '2026-11-23';
 const VIDEOS = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'videos.json'), 'utf8'));
 const crypto = require('crypto');
 const ver = (f) => crypto.createHash('md5').update(fs.readFileSync(path.join(ROOT, f))).digest('hex').slice(0, 8);
-const CSS_V = ver('assets/style.css'), JS_V = ver('assets/site.js'), ICON_V = ver('assets/favicon.svg');
+const CSS_V = ver('assets/style.css'), JS_V = ver('assets/site.js'), ICON_V = ver('assets/favicon.svg'), OG_V = ver('assets/og-image.png');
+const BASE = 'https://shelly910732.github.io/puma-guide/';
 const V = Object.fromEntries(VIDEOS.map((v) => [v.id, v]));
 
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -96,8 +97,17 @@ function layout(p, body) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(p.title ? `${p.title}｜${SITE}` : `${SITE}--${SITE_SUB}`)}</title>
 <meta name="description" content="${esc(p.desc)}">
-<meta property="og:title" content="${esc(p.title || SITE)}">
+<meta property="og:title" content="${esc(p.title ? `${p.title}｜${SITE}` : `${SITE}--${SITE_SUB}`)}">
 <meta property="og:description" content="${esc(p.desc)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${SITE}">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="${BASE}${p.file === 'index.html' ? '' : p.file}">
+<meta property="og:image" content="${BASE}assets/og-image.png?v=${OG_V}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="台北的陽光：認識市長候選人沈伯洋，親子快速指南。台北靠 3 沈伯洋">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#fff8ec">
 <link rel="icon" href="assets/favicon.svg?v=${ICON_V}" type="image/svg+xml">
 <link rel="icon" href="assets/icon-192.png?v=${ICON_V}" sizes="192x192" type="image/png">
